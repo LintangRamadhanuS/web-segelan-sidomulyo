@@ -1,6 +1,6 @@
 # 🏡 Website Desa Sumberpucung
 
-Website resmi Desa Sumberpucung — sejarah desa, dokumentasi KKN UM BBM 2024,
+Website resmi Desa Sumberpucung — sejarah desa, dokumentasi KKN UM BBM 2026,
 dan perpustakaan digital.
 
 **Tech stack:** Next.js 14 · TypeScript · Tailwind CSS · Vercel
@@ -152,5 +152,6 @@ import Image from "next/image";
 
 ## 📞 Bantuan
 
-Hubungi tim KKN UM BBM 2024:
+Hubungi tim KKN UM BBM 2026:
 - Email: desasumberpucung@gmail.com
+- No. Telp: 085853606613
