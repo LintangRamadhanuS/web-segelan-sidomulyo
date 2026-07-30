@@ -1,6 +1,6 @@
-# 🏡 Website Desa Sumberpucung
+# 🏡 Website Segelan Sidomulyo
 
-Website resmi Desa Sumberpucung — sejarah desa, dokumentasi KKN UM BBM 2026,
+Website resmi Segelan Sidomulyo — sejarah dusun, dokumentasi KKN UM BBM 2026,
 dan perpustakaan digital.
 
 **Tech stack:** Next.js 14 · TypeScript · Tailwind CSS · Vercel
@@ -13,11 +13,11 @@ dan perpustakaan digital.
 Download di: https://nodejs.org → pilih versi LTS → install
 
 ### 2. Clone / extract project ini
-Jika dari ZIP: extract ke folder mana saja, misal `D:\website-desa`
+Jika dari ZIP: extract ke folder mana saja, misal `D:\website-dusun`
 
 ### 3. Buka terminal di folder project
 - Windows: klik kanan di folder → "Open in Terminal" / "Open PowerShell here"
-- Mac/Linux: buka Terminal, lalu `cd path/ke/folder/website-desa`
+- Mac/Linux: buka Terminal, lalu `cd path/ke/folder/website-dusun`
 
 ### 4. Install dependencies
 ```bash
@@ -42,7 +42,7 @@ src/lib/data.ts
 ```
 
 Edit file itu untuk mengubah:
-- Nama desa, motto, statistik → `desaInfo`
+- Nama dusun, motto, statistik → `dusunInfo`
 - Isi timeline sejarah       → `sejarahTimeline`
 - Data kegiatan KKN          → `kegiatanKKN`
 - Anggota tim KKN            → `anggotaKKN`
@@ -60,7 +60,7 @@ Edit file itu untuk mengubah:
 ### Langkah 1: Push ke GitHub
 1. Buat akun di https://github.com jika belum punya
 2. Buat repository baru: klik "+" → "New repository"
-   - Nama: `website-desa-sumberpucung`
+   - Nama: `website-dusun-segelan`
    - Pilih: Public
    - Klik "Create repository"
 
@@ -68,9 +68,9 @@ Edit file itu untuk mengubah:
 ```bash
 git init
 git add .
-git commit -m "first commit: website desa sumberpucung"
+git commit -m "first commit: website Segelan Sidomulyo"
 git branch -M main
-git remote add origin https://github.com/USERNAME_KAMU/website-desa-sumberpucung.git
+git remote add origin https://github.com/USERNAME_KAMU/website-dusun-segelan.git
 git push -u origin main
 ```
 *(Ganti USERNAME_KAMU dengan username GitHub kamu)*
@@ -78,11 +78,11 @@ git push -u origin main
 ### Langkah 2: Deploy ke Vercel
 1. Buka https://vercel.com → klik "Sign Up" → pilih "Continue with GitHub"
 2. Setelah login, klik "Add New..." → "Project"
-3. Pilih repository `website-desa-sumberpucung`
+3. Pilih repository `website-dusun-segelan`
 4. Klik "Deploy" — tidak perlu ubah setting apapun!
 5. Tunggu ~2 menit → website kamu LIVE! 🎉
 
-URL: `website-desa-sumberpucung.vercel.app`
+URL: `website-dusun-segelan.vercel.app`
 
 ### Langkah 3: Update website (setelah perubahan)
 Setiap kali edit kode, jalankan:
@@ -98,14 +98,14 @@ Vercel akan otomatis deploy versi terbaru!
 ## 📁 Struktur File
 
 ```
-website-desa/
+website-dusun/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx          ← Template utama (navbar + footer)
 │   │   ├── page.tsx            ← Halaman Beranda
 │   │   ├── globals.css         ← Style global
 │   │   ├── sejarah/
-│   │   │   └── page.tsx        ← Halaman Sejarah Desa
+│   │   │   └── page.tsx        ← Halaman Sejarah dusun
 │   │   ├── dokumentasi-kkn/
 │   │   │   └── page.tsx        ← Halaman Dokumentasi KKN
 │   │   └── perpustakaan/
@@ -132,8 +132,8 @@ website-desa/
 import Image from "next/image";
 
 <Image
-  src="/images/foto-desa.jpg"
-  alt="Foto Desa Sumberpucung"
+  src="/images/foto-dusun.jpg"
+  alt="Foto Segelan Sidomulyo"
   width={800}
   height={400}
   className="rounded-xl"
@@ -144,14 +144,14 @@ import Image from "next/image";
 
 ## 🗺 Cara Pasang Google Maps
 
-1. Buka https://maps.google.com → cari lokasi desa
+1. Buka https://maps.google.com → cari lokasi dusun
 2. Klik "Share" → "Embed a map" → copy kode iframe
-3. Paste di `src/app/page.tsx` bagian Peta Desa
+3. Paste di `src/app/page.tsx` bagian Peta dusun
 
 ---
 
 ## 📞 Bantuan
 
 Hubungi tim KKN UM BBM 2026:
-- Email: desasumberpucung@gmail.com
+- Email: umbbmbalesari1@gmail.com
 - No. Telp: 085853606613
