@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: "Inter", sans-serif;
+    --font-playfair: "Playfair Display", serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-tanah-dark;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+
+  /* Scrollbar halus */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-krem; }
+  ::-webkit-scrollbar-thumb { @apply bg-tanah rounded-full; }
+}
+
+@layer components {
+  /* Tombol utama */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-hijau text-white font-semibold
+           rounded-lg hover:bg-hijau-dark transition-all duration-200 shadow-sm
+           hover:shadow-md active:scale-95;
+  }
+
+  /* Tombol sekunder */
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-6 py-3 border-2 border-tanah text-tanah
+           font-semibold rounded-lg hover:bg-tanah hover:text-white
+           transition-all duration-200 active:scale-95;
+  }
+
+  /* Kontainer halaman */
+  .container-desa {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Judul seksi */
+  .section-title {
+    @apply text-3xl md:text-4xl font-display font-bold text-tanah-dark leading-tight;
+  }
+
+  /* Kartu dasar */
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-krem-dark overflow-hidden
+           hover:shadow-md transition-shadow duration-300;
+  }
+
+  /* Badge kategori */
+  .badge {
+    @apply inline-block px-3 py-1 rounded-full text-xs font-semibold;
+  }
+
+  /* Animasi fade-up untuk section */
+  .animate-on-scroll {
+    @apply opacity-0;
+  }
+
+  .animated {
+    @apply animate-fade-up opacity-100;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
