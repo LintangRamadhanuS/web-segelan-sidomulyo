@@ -18,10 +18,15 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: `${dusunInfo.nama} — ${dusunInfo.kabupaten}`,
+    default: `${dusunInfo.nama} - ${dusunInfo.kabupaten}`,
     template: `%s | ${dusunInfo.nama}`,
   },
   description: dusunInfo.deskripsi,
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-32x32.png",
+    apple: "/favicon-32x32.png",
+  },
   keywords: [
     dusunInfo.nama, dusunInfo.desa, dusunInfo.kecamatan, dusunInfo.kabupaten,
     "KKN UM BBM", "sejarah dusun", "Segelan Sidomulyo", "Balesari Ngajum",
